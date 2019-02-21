@@ -1,8 +1,8 @@
 import pygame
 
 def main():
-    width = 500
-    height = 500
+    width = 1500
+    height = 1500
     blue_color = (97, 159, 182)
 
     pygame.init()
@@ -27,7 +27,7 @@ def main():
         screen.fill(blue_color)
 
         # Game display
-        screen.blit(pikachu_image, (240, 260))
+        screen.blit(pikachu_image, (700, 500))
         pygame.display.update()
         clock.tick(60)
 
