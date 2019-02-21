@@ -7,7 +7,7 @@ def main():
 
     pygame.init()
     screen = pygame.display.set_mode((width, height))
-    pygame.display.set_caption('My Game')
+    pygame.display.set_caption('Pokimii')
     clock = pygame.time.Clock()
 
     # Game initialization
