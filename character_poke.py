@@ -1,8 +1,8 @@
 import pygame
 
 def main():
-    width = 1500
-    height = 1500
+    width = 1000
+    height = 800
     blue_color = (97, 159, 182)
 
     pygame.init()
