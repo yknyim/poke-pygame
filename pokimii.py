@@ -1,9 +1,9 @@
 import pygame
 
 def main():
-    width = 512
-    height = 480
-    background = pygame.image.load('../poke-pygame/images/bg.png')
+    width = 1050
+    height = 1050
+    background = pygame.image.load('../poke-pygame/images/VForest.png')
 
     pygame.mixer.init()
     sound = pygame.mixer.Sound('../poke-pygame/sounds/ViridianF.wav')
@@ -29,10 +29,10 @@ def main():
         # Game logic
 
         # Draw background
-        screen.blit(background, [0,0])
+        screen.blit(background, [-12,-12])
 
         # Game display
-        screen.blit(pikachu_image, (203, 200))
+        screen.blit(pikachu_image, (140, 160))
         pygame.display.update()
         clock.tick(60)
 
