@@ -3,7 +3,7 @@ import pygame
 def main():
     width = 1000
     height = 800
-    blue_color = (97, 159, 182)
+    blank_color = (255, 255, 255)
 
     pygame.init()
     screen = pygame.display.set_mode((width, height))
@@ -24,10 +24,10 @@ def main():
         # Game logic
 
         # Draw background
-        screen.fill(blue_color)
+        screen.fill(blank_color)
 
         # Game display
-        screen.blit(pikachu_image, (700, 500))
+        screen.blit(pikachu_image, (450, 350))
         pygame.display.update()
         clock.tick(60)
 
