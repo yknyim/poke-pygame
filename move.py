@@ -1,4 +1,5 @@
-import pygame
+import pygame, sys
+from pygame.locals import *
 
 class Block(pygame.sprite.Sprite):
     def __init__(self, pos):
@@ -16,6 +17,7 @@ def main():
     size =[1050, 1050]
     pygame.mixer.init()
     sound = pygame.mixer.Sound('../poke-pygame/sounds/ViridianF.wav')
+    sound.play()
 
     screen = pygame.display.set_mode(size)
 
@@ -35,8 +37,6 @@ def main():
 
     while True:
         for event in pygame.event.get():
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                sound.play()
             if event.type == pygame.QUIT:
                 return False
 
@@ -84,7 +84,7 @@ def main():
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT: 
                         pygame.quit()
-                        sys.exit()
+                        # sys.exit()
                 clock.tick(20)
 
 
