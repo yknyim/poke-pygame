@@ -49,7 +49,7 @@ def main():
         for i in range(2):
             if key[player.move[2:4][i]]:
                 player.rect.y += player.vy * [-1, 1][i]
-
+        screen.fill((0,0,0))
         screen.blit(background, [-12,-12])
 
         # first parameter takes a single sprite
